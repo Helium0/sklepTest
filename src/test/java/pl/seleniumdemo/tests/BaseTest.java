@@ -17,7 +17,6 @@ public class BaseTest {
     driver = new ChromeDriver();
     driver.get("https://skleptest.pl/");
     driver.manage().window().maximize();
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterMethod
