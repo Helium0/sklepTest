@@ -1,6 +1,7 @@
 package pl.seleniumdemo.e2e;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pl.seleniumdemo.pages.BlogPage;
 import pl.seleniumdemo.tests.BaseTest;
 
@@ -12,6 +13,10 @@ public class BlogCheck extends BaseTest {
         BlogPage blogPage = new BlogPage(driver);
         blogPage.blogPost();
         blogPage.postsString();
+
+
+        SoftAssert softAssert = new SoftAssert();
+
 
     }
 }
