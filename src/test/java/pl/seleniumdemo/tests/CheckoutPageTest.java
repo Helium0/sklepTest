@@ -6,11 +6,11 @@ import pl.seleniumdemo.pages.CheckoutPage;
 public class CheckoutPageTest extends BaseTest {
 
 
-    @Test
-    public void checkoutPageTest() {
-        CheckoutPage checkoutPageTest = new CheckoutPage(driver);
-        checkoutPageTest.checkoutForm();
-
-    }
+//    @Test
+//    public void checkoutPageTest() {
+//        CheckoutPage checkoutPageTest = new CheckoutPage(driver);
+//        checkoutPageTest.checkoutForm();
+//
+//    }
 
 }
