@@ -2,16 +2,18 @@ pipeline {
     agent any
 
     stages {
+
+    stage('Docker') {
+             steps {
+                 sh 'docker build -t my-image .'
+             }
+         }
+
+
         stage('Build') {
-        agent {
-            docker {
-               image 'maven:3.9.8-eclipse-temurin-11'
-               reuseNode true
-               }
-            }
             steps {
                 echo 'Hello World'
-                sh 'mvn --version'
+
             }
         }
     }
